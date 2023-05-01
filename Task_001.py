@@ -12,3 +12,5 @@ n = int(input("Количество километров в день: "))
 m = int(input("Всего километров: "))
 # print(math.ceil(m / n))
 
+print(m // n % n)
+
