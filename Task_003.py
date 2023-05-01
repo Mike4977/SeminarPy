@@ -15,4 +15,8 @@ cab3 = int(input("Третий класс: "))
 # print(math.ceil(cab1 / 2 + cab2 / 2 + cab3 / 2))
 
 # Второе решение
-print(cab1 // 2  + cab2 // 2 + cab3 // 2 + cab1 % 2  + cab2 % 2 + cab3 % 2)
+# print(cab1 // 2  + cab2 // 2 + cab3 // 2 + cab1 % 2  + cab2 % 2 + cab3 % 2)
+
+# третье решение
+
+print((cab1 + 1) // 2 + (cab2 + 1) // 2 + (cab3 + 1) // 2)
