@@ -11,11 +11,17 @@ y1 = int(input("Координата y1: "))
 x2 = int(input("Координата x2: "))
 y2 = int(input("Координата y2: "))
 
+# if 0 < x1 <= 8 and 0 < y1 <= 8 and 0 < x2 <= 8 and 0 < y2 <= 8:
+#     if x2 == x1 + 1 and y2 == y1 + 2 or x2 == x1 + 2 and y2 == y1 + 1 or\
+#     x2 == x1 - 1 and y2 == y1 - 2 or x2 == x1 - 2 and y2 == y1 - 1 or\
+#     x2 == x1 + 1 and y2 == y1 - 2 or x2 == x1 + 2 and y2 == y1 - 1 or\
+#     x2 == x1 - 1 and y2 == y1 + 2 or x2 == x1 - 2 and y2 == y1 + 1:
+#         print("YES")
+#     else: print("NO")
+# else: print("Ввели некорректные координаты")
+
 if 0 < x1 <= 8 and 0 < y1 <= 8 and 0 < x2 <= 8 and 0 < y2 <= 8:
-    if x2 == x1 + 1 and y2 == y1 + 2 or x2 == x1 + 2 and y2 == y1 + 1 or\
-    x2 == x1 - 1 and y2 == y1 - 2 or x2 == x1 - 2 and y2 == y1 - 1 or\
-    x2 == x1 + 1 and y2 == y1 - 2 or x2 == x1 + 2 and y2 == y1 - 1 or\
-    x2 == x1 - 1 and y2 == y1 + 2 or x2 == x1 - 2 and y2 == y1 + 1:
+    if abs(x1 - x2) == 1 and abs(y1 - y2) == 2 or abs(x1 - x2) == 2 and abs(y1 - y2) == 1:
         print("YES")
     else: print("NO")
 else: print("Ввели некорректные координаты")
