@@ -28,9 +28,9 @@
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 def find_farthest_orbit(orbits):
     res = list(map(lambda x: x[0] * x[1] if x[0] != x[1] else -1, orbits))
-    print(res)
-    print(max(res))
+    # print(res)
+    # print(max(res))
     for i in range(len(res)):
         if res[i] == max(res):
-            print(orbits[i])
-find_farthest_orbit(orbits)
+            return orbits[i]
+print(*find_farthest_orbit(orbits))
